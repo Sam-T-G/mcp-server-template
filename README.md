@@ -31,9 +31,11 @@ Open http://localhost:3000 and connect to `http://localhost:8000/mcp` using "Str
 ## Deployment
 
 ### Option 1: One-Click Deploy
+
 Click the "Deploy to Render" button above.
 
 ### Option 2: Manual Deployment
+
 1. Fork this repository
 2. Connect your GitHub account to Render
 3. Create a new Web Service on Render
@@ -49,7 +51,6 @@ To test the connection explitly, ask poke somethink like `Tell the subagent to u
 If you run into persistent issues of poke not calling the right MCP (e.g. after you've renamed the connection) you may send `clearhistory` to poke to delete all message history and start fresh.
 We're working hard on improving the integration use of Poke :)
 
-
 ## Customization
 
 Add more tools by decorating functions with `@mcp.tool`:
@@ -64,3 +65,5 @@ def calculate(x: float, y: float, operation: str) -> float:
         return x * y
     # ...
 ```
+
+1
